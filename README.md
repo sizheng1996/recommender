@@ -28,7 +28,7 @@ These instructions will help you run the file`run.ipynb`on your local machine an
 #### Data Loading
 The training set is loaded from ``dataset_train.csv`` and is transformed into ``scipy.sparse.lil_matrix`` type to facilitate later operation. Also, we create its copy `ratings_` of type `numpy.array`.
 For submission, we load the submission sample and transform the first column which contains place information of the missing ratings to a list of tuples `submission_row_col`. The original text of the place information is saved in `submission_pos`.
-#### Data Spliting
+#### Data Splitting
 The objective of function `split_data` is to split the training set into "train set" and "test set" so that we can do a local test to estimate the performance of the predictor.The spliting ratio could be changed by tuning parameter `p_test` Moreover, a function `multi_data_split`is provided for have multi training and testing data set for selecting parameters.
 
 ## Data preprocessing
