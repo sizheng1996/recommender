@@ -34,8 +34,8 @@ Data preprocessing includes three parts: 1.Extract mean; 2.Baseline estimate; 3.
 The users can change the parameters `k `and `min_k`. `k `is the number of nearest neighbors. The default value of `k` is 200. `min_k` is the minimum number of support neighbors. The default value of `min_k `is 1. 
 - Matrix Factorization  
 The users can change the parameters `lambda_user `and `lambda_item`. `lambda_user` is the regularization parameter of user. The default value of `lambda_user` is 1e-3.4. `lambda_item` is the regularization parameter of item. The default value of `lambda_item` is 100.
-- K-means
-kmeans
+- K-means  
+If users want to change the parameter( for example, the number of cluster `K`), they need to go to the function `kmeans` in the file `implementations.py` and change the `K_range`.
 
 ## Submission
 By default, solution of the KNN method will be automatically written in `"prediction_recommender.csv"`. The users can output the other results (pred_MF,pred_Kmeans) by changing the input parameter `pred_KNN` in the function`create_csv_submission`.
