@@ -13,7 +13,6 @@ This project aims at creating a recommander system and competing with other team
 |Siqi Zheng|25139
 ----
 
-crowdAI username but additionally also the crowdAI submission ID number which corresponds to your code submission
 ## List of files
 - run.ipynb
 - implementations. py
