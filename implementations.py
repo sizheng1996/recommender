@@ -13,7 +13,7 @@ from helpers import *
 ########################################### KNN ####################################################
 def baseline_estimate(train,lamda_i,lamda_u,epochs,global_mean):
     """Estimate the user effect and item effect, build the baseline estimate model.
-     Reference: "Surprise" libruary""" 
+       Reference: "Surprise" libruary""" 
     
     #get the numbers of items and users
     num_item, num_user = train.get_shape()
@@ -362,7 +362,7 @@ def kmeans(data,data_, nb_times):
             
             # calculate the average loss over all points
             average_loss = np.mean(loss)
-            if abs(old_loss - average_loss) < 1e-6:
+            if abs(old_loss - average_loss) < threhold:
                 break
             loss_list.append(average_loss)
             old_loss = average_loss
