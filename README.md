@@ -7,7 +7,6 @@ This project aims at creating a recommander system and competing with other team
 |Author|Jiahua Wu|Siqi Zheng|
 |---|---|---
 |E-mail|jiahua.wu@epfl.ch|siqi.zheng@epfl.ch
-----
 
 |crowdAI username|submission ID|
 |---|---
