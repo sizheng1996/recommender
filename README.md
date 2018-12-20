@@ -1,7 +1,7 @@
 # Machine Learning Project 2: Recommender System
 
 
-This project aims at creating a recommander system and competing with other teams on crowdAI. This file contains the preprocessing of data, multi-splitting data set, the implementation of three Collaborative Filtering methods, and the creation of submission to crowdai.org.
+This project aims at creating a recommander system and competing with other teams on crowdAI. This file contains the data preprocessing, multi-splitting data set, the implementation of three Collaborative Filtering methods, and the creation of submission to crowdai.org.
 
 
 |Author|Jiahua Wu|Siqi Zheng|
