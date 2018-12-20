@@ -21,7 +21,7 @@ This project aims at creating a recommander system and competing with other team
 - dataset_train.csv
 - dataset_submission.csv
 ## Note
-It will take no more than 10 mins for the `run.ipynb` to run. Please be patient during the process.
+It will take no more than 10 mins for the `run.ipynb` to finish. Please be patient during the process.
 ## Get started
 These instructions will help you make`run.ipynb` running on your local machine and obtain the same result as ours.
 ## Data loading and Data Spliting
