@@ -31,7 +31,7 @@ Data preprocessing includes three parts: 1.Extract mean; 2.Baseline estimate; 3.
 
 ## Three Collaborative Filtering methods
 - K-Nearest Neighbors with means
-The users can change the parameters k and min_k. k is the number of nearest neighbors. The default value of k is 200. min_k is the minimum number of support neighbors. The default value of min_k is 1. 
+-The users can change the parameters k and min_k. k is the number of nearest neighbors. The default value of k is 200. min_k is the minimum number of support neighbors. The default value of min_k is 1. 
 - Matrix Factorization 
 - K-means
 
