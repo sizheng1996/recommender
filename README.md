@@ -63,6 +63,7 @@ def knn_demo(train,test_row_col,nonzero_test,sim_matrix):
 
 - Data preprocessing (Reduce dimensionality)
 - New CF methods (Restricted Boltzmann Machine, Decision Trees)
+- More advanced model ensembling methods(Stacking, Blend)
 
 ## Reference
 http://surpriselib.com
