@@ -9,12 +9,12 @@ This project aims at creating a recommander system and competing with other team
 |E-mail|jiahua.wu@epfl.ch|siqi.zheng@epfl.ch
 ----
 ## List of files
--run.ipynb
--implementations. py
--helpers. py
--plots. py
--dataset_train.csv
--dataset_submission.csv
+- run.ipynb
+- implementations. py
+- helpers. py
+- plots. py
+- dataset_train.csv
+- dataset_submission.csv
 
 ## Get started
 These instructions will help you make`run.ipynb` running on your local machine and obtain the same result as ours.
