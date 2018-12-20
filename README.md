@@ -10,7 +10,7 @@ This project aims at creating a recommander system and competing with other team
 
 |crowdAI username|submission ID|
 |---|---
-|E-mail|jiahua.wu@epfl.ch
+|Siqi Zheng|20 Dec 2018 19:26:49
 ----
 
 crowdAI username but additionally also the crowdAI submission ID number which corresponds to your code submission
