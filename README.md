@@ -24,7 +24,7 @@ This project aims at creating a recommander system and competing with other team
 It will take no more than 10 mins for the `run.ipynb` to finish. Please be patient during the process.
 ## Get started
 These instructions will help you run the file`run.ipynb`on your local machine and obtain the same result as ours. And you can try to tune different parameters to see the change of results.
-## Data loading and Data Spliting
+## Data loading and Data Splitting
 #### Data Loading
 The training set is loaded from ``dataset_train.csv`` and is transformed into ``scipy.sparse.lil_matrix`` type to facilitate later operation. Also, we create its copy `ratings_` of type `numpy.array`.
 For submission, we load the submission sample and transform the first column which contains place information of the missing ratings to a list of tuples `submission_row_col`. The original text of the place information is saved in `submission_pos`.
