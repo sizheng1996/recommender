@@ -8,6 +8,13 @@ This project aims at creating a recommander system and competing with other team
 |---|---|---
 |E-mail|jiahua.wu@epfl.ch|siqi.zheng@epfl.ch
 ----
+
+|crowdAI username|submission ID|
+|---|---
+|E-mail|jiahua.wu@epfl.ch
+----
+
+crowdAI username but additionally also the crowdAI submission ID number which corresponds to your code submission
 ## List of files
 - run.ipynb
 - implementations. py
