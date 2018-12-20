@@ -15,7 +15,8 @@ This project aims at creating a recommander system and competing with other team
 - plots. py
 - dataset_train.csv
 - dataset_submission.csv
-
+## Note
+It will take no more than 10 mins for the `run.ipynb` to run. Please be patient during the process.
 ## Get started
 These instructions will help you make`run.ipynb` running on your local machine and obtain the same result as ours.
 ## Data loading and Data Spliting
@@ -30,6 +31,7 @@ Data preprocessing includes three parts: 1.Extract mean; 2.Baseline estimate; 3.
 
 ## Three Collaborative Filtering methods
 - K-Nearest Neighbors with means
+The users can change the parameters k and min_k. k is the number of nearest neighbors. The default value of k is 200. min_k is the minimum number of support neighbors. The default value of min_k is 1. 
 - Matrix Factorization 
 - K-means
 
@@ -45,8 +47,6 @@ def knn_demo(train,test_row_col,nonzero_test,sim_matrix):
     """Prediction by KNN method, return the rmse for train or test data"""
     pred=[]    
     for row,col in test_row_col:
-        i = row
-        u = col
         est = KNN_with_user_means(train,sim_matrix,k,min_k,row,col,user_mean[0].T)
         pred.append(est)  
   
