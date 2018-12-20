@@ -30,8 +30,8 @@ The objective of function `split_data` is to split the training set into "train 
 Data preprocessing includes three parts: 1.Extract mean; 2.Baseline estimate; 3.Similarity measure with Pearson coefficient. Part 1 will output user mean and global mean. Part 2 will calculate the item effect and user effect used for part 3. Three parameters `lamda_i`, `lamda_u`, `epochs`could be tuned. Part 3 will give the similarity matrix.`min_support`, `shrinkage`two parameters could be tuned.
 
 ## Three Collaborative Filtering methods
-- K-Nearest Neighbors with means
--The users can change the parameters k and min_k. k is the number of nearest neighbors. The default value of k is 200. min_k is the minimum number of support neighbors. The default value of min_k is 1. 
+- K-Nearest Neighbors with means \\
+The users can change the parameters k and min_k. k is the number of nearest neighbors. The default value of k is 200. min_k is the minimum number of support neighbors. The default value of min_k is 1. 
 - Matrix Factorization 
 - K-means
 
