@@ -13,7 +13,7 @@ from helpers import *
 ########################################### KNN ####################################################
 def baseline_estimate(train,lamda_i,lamda_u,epochs,global_mean):
     """Estimate the user effect and item effect, build the baseline estimate model.
-       Reference: "Surprise" libruary""" 
+       Reference: "Surprise" library""" 
     
     #get the numbers of items and users
     num_item, num_user = train.get_shape()
@@ -48,7 +48,7 @@ def baseline_estimate(train,lamda_i,lamda_u,epochs,global_mean):
 
 def user_based_similarity_by_pearson_baseline(train,min_support,global_mean, user_biases, item_biases, shrinkage=100):
     """Calculate the Pearson coefficient of users,build the similarity matrix
-       Reference: "Surprise" libruary"""
+       Reference: "Surprise" library"""
     #get the numbers of items and users
     num_item, num_user = train.get_shape()
     train=train.toarray()
@@ -93,7 +93,7 @@ def user_based_similarity_by_pearson_baseline(train,min_support,global_mean, use
 
 def KNN_with_user_means(train,sim_matrix,k,min_k,row,col,user_mean):
     """Predict by KNN method based on user means
-       Reference: "Surprise" libruary"""
+       Reference: "Surprise" library"""
     
     #initial setting
     i=row
@@ -110,7 +110,6 @@ def KNN_with_user_means(train,sim_matrix,k,min_k,row,col,user_mean):
     # Extract the top-K most-similar ratings
     k_neighbors = heapq.nlargest(k, neighbors, key=lambda t: t[1])
 
- 
     # compute weighted average
     est = user_mean[u]
     sum_sim = 0
@@ -326,7 +325,7 @@ def update_u(z,K,data,item_mean):
                 u[ind,k] = item_sum[ind] / item_nnz[ind]            
     return u
 
-def kmeans(data,data_, nb_times):
+def kmeans(data,data_):
     """ Predict the missing ratings by K-means"""
    
     # initial settings
@@ -362,7 +361,7 @@ def kmeans(data,data_, nb_times):
             
             # calculate the average loss over all points
             average_loss = np.mean(loss)
-            if abs(old_loss - average_loss) < threhold:
+            if abs(old_loss - average_loss) < threshold:
                 break
             loss_list.append(average_loss)
             old_loss = average_loss
@@ -386,3 +385,10 @@ def compute_error_Kmeans(data_,result):
     for i in range(len(nz_row)):
         mse += (data_[nz_row[i], nz_col[i]] - result[nz_row[i],nz_col][i]) ** 2
     return np.sqrt(1.0 * mse / len(nz_row))
+
+########################################### Multi-split ####################################################
+def multi_data_split(k):
+    """produce different train set and test set by same ratio"""
+    for i in range(k):
+        seed = np.random.randint(1000, size=1)[0]
+        train,test = split_data(ratings,seed)
